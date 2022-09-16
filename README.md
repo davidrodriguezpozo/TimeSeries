@@ -30,4 +30,6 @@ from timeseries.assessor import PredictionAssessor
 rmse = PredictionAssessor.evaluate_rmse(df["predicted"], df["actual"])
 ```
 
-
+***
+## DISCLAIMER
+Since the repository is still under development, several bugs may be encountered if used. Feel free to comment advices/bugs! 🐞
