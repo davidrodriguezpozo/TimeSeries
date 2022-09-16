@@ -1,5 +1,5 @@
 [project]
-name = "timeseries_DAVID_RODRIGUEZ_POZO"
+name = "timeseries_modeling"
 version = "0.0.1"
 authors = [
   { name="David Rodriguez", email="davidrp1996@gmail.com" },
