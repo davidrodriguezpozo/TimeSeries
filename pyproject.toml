@@ -1,6 +1,6 @@
 [project]
 name = "timeseries_modeling"
-version = "0.0.1"
+version = "0.0.2"
 authors = [
   { name="David Rodriguez", email="davidrp1996@gmail.com" },
 ]
@@ -26,7 +26,7 @@ authors = ["David Rodriguez <davidrp1996@gmail.com>"]
 license = "MIT"
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.7"
 pandas = "^1.4.4"
 numpy = "^1.23.3"
 Quandl = "^3.7.0"
