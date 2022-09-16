@@ -1,7 +1,7 @@
 # TimeSeries
 
-## This project has several utlity functions and prediction methods to handle Time Series data. 
-
+This project has several utlity functions and prediction methods to handle Time Series data. 
+***
 ## Generate the Time Series
 
 Time Series can be generated given a CSV, a Ticker (YFinance) or a Quandl code. The library transforms the data into a 
