@@ -17,3 +17,31 @@ classifiers = [
 [project.urls]
 "Homepage" = "https://github.com/davidrodriguezpozo/TimeSeries"
 "Bug Tracker" = "https://github.com/davidrodriguezpozo/TimeSeries/issues"
+
+[tool.poetry]
+name = "timeseries_modeling"
+version = "0.1.0"
+description = "Package to handle time series data, make predictions, and assess them"
+authors = ["David Rodriguez <davidrp1996@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^1.4.4"
+numpy = "^1.23.3"
+Quandl = "^3.7.0"
+yfinance = "^0.1.74"
+statsmodels = "^0.13.2"
+matplotlib = "^3.6.0"
+
+[tool.poetry.dev-dependencies]
+matplotlib = "^3.6.0"
+pandas = "^1.4.4"
+numpy = "^1.23.3"
+statsmodels = "^0.13.2"
+Quandl = "^3.7.0"
+yfinance = "^0.1.74"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
