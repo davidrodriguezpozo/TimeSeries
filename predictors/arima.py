@@ -5,8 +5,9 @@ from typing import Optional
 import numpy as np
 import pandas as pd
 import statsmodels.api as sm
-from timeseries.predictors.autoregression.v1 import AutoRegressionPredictor
-from timeseries.utils import _get_col
+
+from ..utils import _get_col
+from .autoregression.v1 import AutoRegressionPredictor
 
 
 class ARIMA:

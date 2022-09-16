@@ -2,8 +2,9 @@ from __future__ import annotations
 
 import numpy as np
 import pandas as pd
-from timeseries.predictors.autoregression.v2 import AutoRegressionPredictor
-from timeseries.utils import _get_col, rmse
+
+from ..utils import _get_col, rmse
+from .autoregression.v2 import AutoRegressionPredictor
 
 
 class MonteCarloPredictor:

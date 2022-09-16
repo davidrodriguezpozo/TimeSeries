@@ -3,7 +3,8 @@ from __future__ import annotations
 from typing import Optional
 
 import pandas as pd
-from timeseries.utils import _create_diff_col, _get_col
+
+from ..utils import _create_diff_col, _get_col
 
 
 class NaivePredictor:

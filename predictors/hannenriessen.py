@@ -4,8 +4,9 @@ from re import A
 
 import numpy as np
 import pandas as pd
-from timeseries.predictors.autoregression.v1 import AutoRegressionPredictor
-from timeseries.utils import _create_diff_col, _get_col
+
+from ..utils import _create_diff_col, _get_col
+from .autoregression.v1 import AutoRegressionPredictor
 
 
 class HannenRissanen:

@@ -2,7 +2,8 @@ import numpy as np
 import pandas as pd
 from matplotlib import pyplot as plt
 from statsmodels import api as sm
-from timeseries.utils import _get_col
+
+from ...utils import _get_col
 
 
 class AutoRegressionPredictor:

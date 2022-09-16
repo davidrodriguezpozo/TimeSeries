@@ -6,9 +6,10 @@ import numpy as np
 import pandas as pd
 import statsmodels.api as sm
 from statsmodels.tsa.seasonal import STL
-from timeseries.predictors.autoregression.v1 import AutoRegressionPredictor
-from timeseries.smoothers import exponential
-from timeseries.utils import _create_diff_col, _get_col
+
+from ...smoothers import exponential
+from ...utils import _create_diff_col, _get_col
+from ..autoregression.v1 import AutoRegressionPredictor
 
 
 class Decompositions:

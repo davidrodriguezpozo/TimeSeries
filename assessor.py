@@ -5,7 +5,7 @@ from typing import Optional
 import numpy as np
 import pandas as pd
 
-from timeseries.utils import _get_col, rmse
+from .utils import _get_col, rmse
 
 
 class PredictionAssessor:

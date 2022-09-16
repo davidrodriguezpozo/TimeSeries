@@ -5,7 +5,8 @@ from typing import Tuple
 import numpy as np
 import pandas as pd
 import statsmodels.api as sm
-from timeseries.utils import _get_col
+
+from ..utils import _get_col
 
 
 class GARCHModel:

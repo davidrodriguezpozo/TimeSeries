@@ -4,7 +4,8 @@ from typing import Optional
 
 import numpy as np
 import pandas as pd
-from timeseries.utils import _get_col
+
+from ...utils import _get_col
 
 
 class AutoRegressionPredictor:

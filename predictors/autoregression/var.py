@@ -2,7 +2,8 @@ import math
 
 import numpy as np
 import pandas as pd
-from timeseries.predictors.autoregression.v1 import AutoRegressionPredictor
+
+from .v1 import AutoRegressionPredictor
 
 
 class VARModel(AutoRegressionPredictor):

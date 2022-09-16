@@ -2,7 +2,7 @@
 import numpy as np
 import pandas as pd
 
-from timeseries.utils import _get_col
+from .utils import _get_col
 
 
 def moving_average(series: pd.DataFrame, col: str = None, number: int = 3) -> pd.DataFrame:
