@@ -9,8 +9,10 @@ from ..utils import _create_diff_col, _get_col
 
 class NaivePredictor:
     @classmethod
-    def naive_prediction(cls: NaivePredictor, df: pd.DataFrame, col: Optional[str] = None) -> pd.DataFrame:
-        """Performs a naive prediction, which is predicting that the current value is the same as the previous value. 
+    def naive_prediction(
+        cls: NaivePredictor, df: pd.DataFrame, col: Optional[str] = None
+    ) -> pd.DataFrame:
+        """Performs a naive prediction, which is predicting that the current value is the same as the previous value.
 
         Args:
             df (pd.DataFrame): DataFrame that contains the information
@@ -25,7 +27,12 @@ class NaivePredictor:
         return df.dropna(axis=0)
 
     @classmethod
-    def average_prediction(cls: NaivePredictor, df: pd.DataFrame, col: Optional[str] = None, last: Optional[int] = 2) -> pd.DataFrame:
+    def average_prediction(
+        cls: NaivePredictor,
+        df: pd.DataFrame,
+        col: Optional[str] = None,
+        last: Optional[int] = 2,
+    ) -> pd.DataFrame:
         """Performs an average, perdiction, where the current value is the mean of the previos `last` values
 
         Args:
@@ -38,11 +45,18 @@ class NaivePredictor:
         """
         df = df.copy()
         col = _get_col(df, col)
-        df[f"Prediction_{col}"] = 1/last * (df[col].cumsum().shift() - df[col].cumsum().shift(last+1))
+        df[f"Prediction_{col}"] = (
+            1 / last * (df[col].cumsum().shift() - df[col].cumsum().shift(last + 1))
+        )
         return df.dropna(axis=0)
-    
+
     @classmethod
-    def average_trend_prediction(cls: NaivePredictor, df: pd.DataFrame, col: Optional[str] = None, last: Optional[int] = 2) -> pd.DataFrame:
+    def average_trend_prediction(
+        cls: NaivePredictor,
+        df: pd.DataFrame,
+        col: Optional[str] = None,
+        last: Optional[int] = 2,
+    ) -> pd.DataFrame:
         """Computes the prediction using averages and differences, using the formula `Current value = Previous + Predicted diff`.
         Predicted diffrences are computed using an average prediction
 

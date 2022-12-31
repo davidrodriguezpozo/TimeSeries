@@ -13,5 +13,5 @@ class CSVDataFrame:
     def time_series(self, column: str = None) -> pd.DataFrame:
         column = column or "Close"
         df = self._df.drop(columns=[col for col in self._df.columns if col != column])
-        df[column] = df[column].replace(",", "", regex=True).astype('float')
+        df[column] = df[column].replace(",", "", regex=True).astype("float")
         return df
