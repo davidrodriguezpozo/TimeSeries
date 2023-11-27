@@ -1,6 +1,12 @@
 # TimeSeries
 
-This project has several utlity functions and prediction methods to handle Time Series data. 
+This project has several utlity functions and prediction methods to handle Time Series data. (https://pypi.org/project/timeseries-modeling/)
+***
+## Install
+```
+pip install timeseries-modeling
+```
+
 ***
 ## Generate the Time Series
 
